@@ -6,3 +6,6 @@
     height: 250px;
     object-fit: cover;
 }
+.card{
+    width: 300px;
+}
