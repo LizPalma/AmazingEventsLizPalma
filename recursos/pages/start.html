@@ -24,20 +24,20 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Home</a>
+                            <a class="nav-link fw-bold" href="/index.html">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./upComingEvents.html">Upcoming Events</a>
+                            <a class="nav-link fw-bold"" href="./upComingEvents.html">Upcoming Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pastEvent.html">Past Event</a>
+                            <a class="nav-link fw-bold" href="./pastEvent.html">Past Event</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                            <a class="nav-link fw-bold" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Start</a>
+                            <a class="nav-link fw-bold active" aria-current="page" href="#">Start</a>
                         </li>
                     </ul>
 
@@ -52,38 +52,50 @@
         </nav>
     </header>
     <main>
-        <!-- Carrusel-->
 
-        <div id="carouselExample" class="carousel slide">
-            <!-- Modificar carrusel ⚠ -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="carrusel" src="../imagenes/optional_banner_2.jpg" class="d-block w-100"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="carrusel" src="../imagenes/optional_banner_3.jpg" class="d-block w-100"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="carrusel" src="../imagenes/optional_banner_4.jpg" class="d-block w-100"
-                        alt="...">
-                </div>
+       <!-- Carrusel-->
+
+       <div id="carouselExample" class="carousel slide">
+        <!-- Modificar carrusel ⚠ -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="opacity-50 carrusel" src="../imagenes/optional_banner_1.jpg"
+                    class="d-block w-100" alt="Food">
+
+            </div>
+            <div class="carousel-item ">
+
+                <img class="carrusel opacity-50" src="../imagenes/optional_banner_2.jpg"
+                    class="d-block w-100" alt="cinema">
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item ">
+                <img class="carrusel opacity-50" src="../imagenes/optional_banner_3.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img class="carrusel opacity-50" src="../imagenes/optional_banner_4.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item opacity-50">
+                <img class="carrusel" src="../imagenes/optional_banner_5.jpg" class="d-block w-100"
+                    alt="...">
+            </div>
         </div>
 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 <!--Table-->
-        <div>
-            <div class="table-responsive p-5">
+        <div class="row justify-content-center">
+            <div class="col-8 p-3">
                 <table class="table border border-black">
                     <thead class="table-secondary border border-black">
                         <tr>
@@ -173,30 +185,43 @@
         </div>
     </main>
     <footer>
-        <div class="container-fluid">
 
-            <nav class="navbar bg-body-tertiary">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="../imagenes/facebook.png" alt="facebook" width="30" height="24">
-                    </a>
+        <div class="container-fluid d-flex justify-content-between p-3">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 col-lg-3 p-3">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="../imagenes/facebook.png" alt="facebook" width="30" height="24">
+                        </a>
+                    </div>
                 </div>
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="../imagenes/instagram.png" alt="instagram" width="30" height="24">
-                    </a>
+
+                <div class="col-xs-12 col-md-3 col-lg-3 p-3">
+
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="../imagenes/instagram.png" alt="instagram" width="30" height="24">
+                        </a>
+                    </div>
+
                 </div>
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="../imagenes/whatsapp.png" alt="whatsapp" width="30" height="24">
-                    </a>
+                <div class="col-xs-12 col-md-3 col-lg-3 p-3">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="../imagenes/whatsapp.png" alt="whatsapp" width="30" height="24">
+                        </a>
+                    </div>
+
                 </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-3 col-lg-3 text-center p-3">
                 <div>
-                    <p class="fw-bold fs-6">Liz Palma </p>
+                    <p class="fw-bold fs-6 ">Liz Palma </p>
                 </div>
-            </nav>
 
-
+            </div>
         </div>
     </footer>
 
