@@ -8,4 +8,20 @@
 }
 .card{
     width: 300px;
+    
+}
+
+.header{
+    width: 100%;
+    min-height: 15%;
+}
+
+.main{
+    width: 100%;
+    min-height: 70%;
+}
+
+.footer{
+    width: 100%;
+    min-height: 15%;
 }
