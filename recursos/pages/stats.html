@@ -94,95 +94,58 @@
     </div>
 
 <!--Table-->
-        <div class="row justify-content-center">
-            <div class="col-8 p-3">
-                <table class="table border border-black">
-                    <thead class="table-secondary border border-black">
-                        <tr>
-                            <th>Encabezado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="table border border-black">
-                    <thead class="table-secondary border border-black">
-                        <tr>
-                            <th>Encabezado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="table border border-black">
-                    <thead class="table-secondary border border-black">
-                        <tr>
-                            <th>Encabezado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                            <td class="border border-black">....</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+<div id="tabla" class="d-flex justify-content-center p-3">
+    <div class="mb-3 col-8">
+        <table class="table table-bordered border-dark">
+            <!-- Tabla 1 -->
+            <thead>
+                <tr class="table-secondary">
+                    <th colspan="3">Events Statistics</th>
+                </tr>
+                <tr>
+                    <th>Event with Highest % of Attendance</th>
+                    <th>Event with Lowest % of Attendance</th>
+                    <th>Event with Largest Capacity</th>
+                </tr>
+            </thead>
+            <tbody id="events-statistics">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            
+            <!-- Tabla 2 -->
+            <thead>
+                <tr class="table-secondary">
+                    <th colspan="3">Upcoming Events Statistics by Category</th>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <th>Revenues</th>
+                    <th>Percentage of Attendance</th>
+                </tr>
+            </thead>
+            <tbody id="upcoming-events">
+            </tbody>
 
-        </div>
+            <!-- Tabla 3 -->
+            <thead>
+                <tr class="table-secondary">
+                    <th colspan="3">Past Events Statistics by Category</th>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <th>Revenues</th>
+                    <th>Percentage of Attendance</th>
+                </tr>
+            </thead>
+            <tbody id="past-events">
+            </tbody>
+        </table>
+    </div>
+</div>
     </main>
     <footer class="footer">
 
@@ -229,6 +192,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        
+        <script type="module" src="./stats.html"></script>
 </body>
 
 </html>

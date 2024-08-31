@@ -1,4 +1,5 @@
-import { displayEventDetails } from '../modelos/funciones.js';
+import {displayStatistics  } from './modules/functions.js';
+
 
  
     fetch('https://aulamindhub.github.io/amazing-api/events.json')
@@ -6,7 +7,7 @@ import { displayEventDetails } from '../modelos/funciones.js';
     .then(info => { 
         console.log(info);
 
-        displayEventDetails(info.events)
-        
+        displayStatistics(info.events);
+    
 
     })
