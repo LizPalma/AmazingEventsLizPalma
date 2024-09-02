@@ -1,27 +1,29 @@
+
+.header{
+    width: 100%;
+    min-height: 15px;
+}
+
+.main{
+    width: 100%;
+    min-height: 70px;
+}
+.footer{
+    width: 100%;
+    min-height: 15px;
+    background-color: aliceblue;
+}
 .Logo{
     width: 20%;
 }
 .carrusel{
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 .card{
-    width: 300px;
-    
+    width: 250px;
 }
-
-header{
-    width: 100%;
-    min-height: 15px;
-}
-
-main{
-    width: 100%;
-    min-height: 70px;
-}
-
-footer{
-    width: 100%;
-    min-height: 15px;
+.card-img-top{
+    height: 200px;
 }
