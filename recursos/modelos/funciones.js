@@ -6,9 +6,9 @@ export function displayEvents(events) {
     container.innerHTML = "";
     events.forEach(event => {
       let eventDiv = document.createElement('div');
-      eventDiv.classList.add('event','col-8', 'col-sm-6', 'col-lg-3', 'mb-2' );
+      eventDiv.classList.add('event','col-12', 'col-sm-6', 'col-lg-3', 'mb-2','p-3' );
       eventDiv.innerHTML = `
-        <div class="card text-bg-light bg-opacity-50 h-100">
+        <div class="card text-bg-light bg-opacity-50 w-100 h-100">
           <img src="${event.image}" class="card-img-top" alt="${event.name}">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">${event.name}</h5>
@@ -157,10 +157,10 @@ export function displayEventDetails  ( events){
   const eventDetails = document.getElementById('details');
   if (eventDetails && events) {
     eventDetails.innerHTML = `
-      <div class="card mb-3 w-50">
+      <div class="card mb-3 w-50 bg-body-tertiary">
         <div class="row g-0">
           <div class="col-md-4">
-            <img id="imgDetail" src="${events.image}" class="img-fluid rounded-start" alt="${events.name}">
+            <img id="imgDetail" src="${events.image}" class="img-fluid rounded-start p-3" alt="${events.name}">
           </div>
           <div class="col-md-8">
             <div class="card-body">

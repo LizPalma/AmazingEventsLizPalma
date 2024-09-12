@@ -1,17 +1,18 @@
 
 .header{
     width: 100%;
-    min-height: 15px;
+    min-height: 15vh;
 }
 
 .main{
     width: 100%;
-    min-height: 70px;
+    min-height: 70vh;
+    background-color: rgb(241, 248, 248);
 }
 .footer{
     width: 100%;
-    min-height: 15px;
-    background-color: aliceblue;
+    min-height: 15vh;
+    background-color: rgb(79, 121, 157);
 }
 .Logo{
     width: 20%;
@@ -22,8 +23,9 @@
     object-fit: cover;
 }
 .card{
-    width: 250px;
+    width: 220px;
 }
 .card-img-top{
     height: 200px;
 }
+
