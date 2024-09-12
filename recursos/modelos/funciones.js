@@ -6,7 +6,7 @@ export function displayEvents(events) {
     container.innerHTML = "";
     events.forEach(event => {
       let eventDiv = document.createElement('div');
-      eventDiv.classList.add('event','col-12', 'col-sm-6', 'col-lg-3', 'mb-3' );
+      eventDiv.classList.add('event','col-8', 'col-sm-6', 'col-lg-3', 'mb-2' );
       eventDiv.innerHTML = `
         <div class="card text-bg-light bg-opacity-50 h-100">
           <img src="${event.image}" class="card-img-top" alt="${event.name}">
@@ -90,6 +90,7 @@ export function generateFilters(data) {
   export function filterEvents(data) {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const selectedCategories = getSelectedCategories();
+  console.log(data.events, 'data filter');
   
     const filteredEvents = data.events.filter(event => {
       const isNameMatch = event.name.toLowerCase().includes(searchInput);
@@ -102,7 +103,7 @@ export function generateFilters(data) {
   // filtro combinado
   
   export function setupEventListeners(info) {
-    document.querySelectorAll('#filterContainer .form-check-input').forEach(checkbox => {
+    document.querySelectorAll('#category .form-check-input').forEach(checkbox => {
 
       checkbox.addEventListener('change', ()=> {
        
@@ -129,6 +130,7 @@ export function generateFilters(data) {
     const pastEvents = data.events.filter(event => new Date(event.date) > new Date(data.currentDate));
     displayEvents(pastEvents);
   };
+  
 
   //...........................pastEvents
 
@@ -143,12 +145,12 @@ export function generateFilters(data) {
     return events.filter(event => selectedCategories.includes(event.category));
   };
 
-  export function filterPastEventsPast() {
+  export function filterPastEventsPast  () {
     const pastEvents = data.events.filter(event => new Date(event.date) < new Date(data.currentDate));
     const filteredEvents = filterEventsByCategory(pastEvents);
     displayEvents(filteredEvents);
   };
- 
+
 //................details
 
 export function displayEventDetails  ( events){

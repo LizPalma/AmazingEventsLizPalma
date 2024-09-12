@@ -1,7 +1,9 @@
 
-  import { displayEvents, generateFilters, getSelectedCategories, filterEvents, setupEventListeners, filterEventsByCategory } from '../modelos/funciones.js';
+  import { displayEvents, generateFilters, getSelectedCategories, filterEvents, setupEventListeners, filterPastEvents, filterEventsByCategory } from '../modelos/funciones.js';
 
- 
+
+
+
     fetch('https://aulamindhub.github.io/amazing-api/events.json')
     .then(response => response.json()) // convierte de txt a (objeto) en json 
     .then(info => { 
@@ -12,7 +14,6 @@
       filterEvents (info) 
       setupEventListeners(info);
       filterEventsByCategory(info)
-
     })
 
  
